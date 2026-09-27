@@ -1,0 +1,27 @@
+.next-button {
+  @media (min-width: 576px) {
+    display: none
+  }
+  @media (max-width: 575px) {
+    display: block;
+    position: absolute;
+    top: 155px;
+    @media (max-width: 575px) {
+    }
+  }
+  button {
+    background-color: $whiteColor;
+    border: 1px solid #c5c5c5;
+    width: 200px;
+    box-shadow: 0px 0.5px 5px #4390ed;
+    height: 50px;
+    font-size: 25px;
+    color: #5a5a5a;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 0;
+    &:hover {
+      box-shadow: 0 0 0 0
+    }
+  }
+}

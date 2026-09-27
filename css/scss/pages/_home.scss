@@ -1,0 +1,328 @@
+.sign-up-form {
+  @media (min-width: 992px) {
+    margin: $marginPixels + 65 0
+  }
+  @media (min-width: 576px) {
+    display: block;
+  }
+  .container {
+    .row {
+      @media (max-width: 767px) {
+        margin-top: 60px
+      }
+      > div {
+        @media (max-width: 575px) {
+          display: none
+        }
+        &:first-child {
+          @media (max-width: 575px) {
+            display: flex !important
+          }
+        }
+      }
+    }
+  }
+  .logo {
+    @media (max-width: 575px) {
+      text-align: center;
+    }
+    .main {
+      position: relative;
+    }
+    .icons {
+      img {
+        position: absolute;
+        width: 45px
+      }
+      .spaceman {
+        position: absolute;
+        top: -200px;
+        img {
+          width: 0
+        }
+      }
+      .spaceman-1 {
+        img {
+          right: 28px;
+          top: 146px;
+        }
+      }
+      .spaceman-2 {
+        img {
+          right: -50px;
+          top: 124px;
+        }
+      }
+      .spaceman-3 {
+        img {
+          right: 15px;
+          top: 240px;
+        }
+      }
+      .spaceman-4 {
+        img {
+          top: 265px;
+          right: -17px;
+        }
+      }
+      .spaceman-5 {
+        img {
+          top: 195px;
+          right: -85px;
+        }
+      }
+      .spaceman-6 {
+        img {
+          top: 205px;
+          right: 167px;
+        }
+      }
+      .spaceman-7 {
+        img {
+          top: 129px;
+          right: 124px;
+        }
+      }
+      .spaceman-8 {
+        img {
+          top: 185px;
+          right: -158px;
+        }
+      }
+    }
+  }
+  .title {
+    position: relative;
+    z-index: 99;
+    .heading {
+      color: #fe5d55
+    }
+    .description {
+      color: #aaa;
+      font: normal 14px $openSans;
+      margin-left: $marginPixels - 5
+    }
+  }
+  .title {
+    position: relative;
+    z-index: 99;
+    .heading {
+      color: #fe5d55
+    }
+    .description {
+      color: #aaa;
+      font: normal 14px $openSans;
+      margin-left: $marginPixels - 5
+    }
+  }
+  .form {
+    input {
+      color: #555
+    }
+    form {
+      .user-name {
+        input {
+          &:not(:last-child) {
+            margin-right: $marginPixels + 5;
+          }
+        }
+      }
+      .user-name {
+        display: flex;
+        position: relative;
+        z-index: 9
+      }
+      .user-name,
+      .email,
+      .password {
+        input {
+          width: $mainWidth;
+          border: 1px solid #ddd;
+          padding: 5px 10px;
+          border-radius: 25px;
+          transition: all .1s ease-in-out;
+          &:focus {
+            border-color: #4390ed
+          }
+        }
+      }
+      .email,
+      .password,
+      .user-birthday,
+      .user-gender {
+        @media (min-width: 576px) {
+          display: block
+        }
+        @media (max-width: 575px) {
+          transform: translateY(-50px);
+          opacity: 0
+        }
+      }
+      .user-birthday {
+        margin: $marginPixels 0;
+        .user-birthday-title {
+          p {
+            color: #607d8b;
+            font: 400 18px $roboto
+          }
+        }
+        .date {
+          .form-group {
+            margin-right: $marginPixels - 5;
+            margin-bottom: 0;
+            .select {
+              padding: 5px;
+              option {
+                height: 20px;
+                overflow: hidden
+              }
+            }
+          }
+          .info {
+            width: $secondWidth + 70;
+            font-size: 12px;
+            margin-left: $marginPixels;
+            color: $blueColor;
+            position: relative;
+            @media (max-width: 380px) {
+              font-size: 10px
+            }
+            .box {
+              position: absolute;
+              background: white;
+              top: -3px;
+              left: -354px;
+              margin-right: 183px;
+              z-index: 1;
+              padding: 10px;
+              font-size: 12px;
+              border-radius: 5px;
+              box-shadow: 0 1px 15px 0;
+              display: none;
+              z-index: 999;
+              &:before {
+                content: "";
+                width: 0;
+                height: 0;
+                border-width: 10px 0px 10px 10px;
+                border-style: solid;
+                border-color: transparent #007bff;
+                position: absolute;
+                right: -10px;
+              }
+              button {
+                padding: 0px;
+                font-size: 13px;
+                width: 30px;
+                height: 25px;
+                padding-bottom: 1px;
+                float: right;
+              }
+            }
+            p {
+              color: #607d8b
+            }
+
+          }
+        }
+      }
+      .user-gender {
+        margin-left: -$marginPixels + 2;
+        @media (min-width: 576px) {
+          display: flex
+        }
+        @media (max-width: 575px) {
+          transform: translateY(-50px);
+          opacity: 0
+        }
+        input {
+          width: 12px;
+        }
+        label {
+          margin: 0;
+          font-size: 20px;
+          &:not(:last-child) {
+            margin-right: $marginPixels
+          }
+          &:before {
+            top: 12px;
+            left: -15px;
+            width: 10px;
+            height: 10px;
+          }
+          &:after {
+            top: 9px;
+            left: -18px
+          }
+        }
+      }
+    }
+    .user-birthday,
+    .user-gender,
+    .license {
+      margin-left: $marginPixels - 5
+    }
+    .license {
+      @media (min-width: 576px) {
+        display: block
+      }
+      @media (max-width: 575px) {
+        transform: translateY(-50px);
+        opacity: 0
+      }
+      p {
+        color: #607D8B;
+        font-size: 15px
+      }
+    }
+    .submit {
+      position: relative;
+      @media (min-width: 576px) {
+        display: block
+      }
+      @media (max-width: 575px) {
+        transform: translateY(-50px);
+        opacity: 0
+      }
+      .submit-button {
+        background-color: $whiteColor;
+        border: 1px solid #c5c5c5;
+        width: 200px;
+        box-shadow: 0px 0.5px 5px #4390ed;
+        height: 50px;
+        font-size: 25px;
+        color: #5a5a5a;
+        border-radius: 25px;
+        cursor: pointer;
+      }
+      .loading {
+        ul {
+          position: absolute;
+          left: 75px;
+          top: 22px;
+          align-items: center;
+          display: none;
+          li {
+            width: 10px;
+            height: 10px;
+            background-color: #eee;
+            border-radius: 50%;
+            animation: loading 1.5s infinite ease-in-out;
+            &:first-child {
+              animation-delay: .5s
+            }
+            &:nth-child(2) {
+              animation-delay: 1s
+            }
+            &:last-child {
+              animation-delay: 1.5s;
+            }
+            &:not(:last-child) {
+              margin-right: $marginPixels;
+            }
+          }
+        }
+      }
+    }
+  }
+}

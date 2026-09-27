@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Meta Tag For Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Web Designer Name -->
+    <meta name="author" content="Ismail Nasser" />
+    <!-- Keywork for search engine -->
+    <meta name="keywords" content="Web, Site, Design, Fron, End, Developer" />
+    <!-- Description for your webpage -->
+    <meta name="description" content="Unknonw, Is the most beautiful site for you" />
+    <!-- Page Title -->
+    <title>Poostel</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,600,700|Roboto:300,400,500,700|Cairo">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/fontawesome/font-awesome.min.css" />
+    <!-- Call Bootstrap File -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <!--
+      - Call the custom css file.
+      - Don't call any file under this file.
+      - Call all your files at the top of this files.
+    -->
+    <link rel="stylesheet" href="css/mobile-login-page.css" />
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="wrapper d-flex align-items-center">
+              <!-- Logo -->
+              <div class="logo border-right">
+                <img src="images/logo.png" alt="Poostel logo" />
+              </div>
+
+              <!-- Login Button -->
+              <div class="login-button">
+                <a href="mobile-login.html" class="mobile">Log In </a>
+                <a href="" class="mobile">-</a>
+                <a href="mobile-index.html">Sign Up</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9 d-flex align-items-center latest-news-column">
+            <div class="latest-news d-flex  mx-auto" dir="rtl">
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+    
+    <article class="sign-up-form text-right">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg">
+            <div class="logo d-flex justify-content-center align-items-center w-100 h-100">
+              <img class="main" src="images/globe.png" alt="Poostel logo" style="width: 75%"/>
+            </div>
+          </div>
+          <div class="col-lg form-column">
+            <!-- Up title -->
+            <div class="title text-left">
+              <h1 class="heading m-0">Log In</h1>
+              <p class="description">Lorem Ipsum is simply dummy text</p>
+            </div>
+
+            <div class="form text-left">
+              <form action="">
+
+                <!-- Email Address -->
+                <div class="email mb-2">
+                  <input type="email" name="email" placeholder="Email or Mobile Number "/>            
+                </div>
+
+                <!-- Password -->
+                <div class="password mb-2">
+                  <input type="password" name="password" placeholder="Password" />            
+                </div>
+                
+                <!-- Forgit Password -->
+                <div class="forgit-password">
+                  <p class="ml-2"><a href="forgote.html">Forgite Password?</a></p>
+                </div>
+
+                <div class="submit">
+                  <div class="loading">
+                    <ul class="list-styled">
+                      <li class="active"></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>  
+                  <input type="button" class="submit-button" name="submit" value="Log In">
+                </div>
+                <div class="next-button text-center">
+                  <button>Next</button>
+                </div>
+              </form>
+              
+            </div>
+          </div> <!-- End Col -->
+        </div> <!-- End Row -->
+      </div> <!-- End Container -->
+    </article>
+    
+    <!-- Footer -->
+    <footer class="footer py-3" style="margin-top: 200px">
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-12 col-md-6">
+            <div class="list">
+              <ul class="list-unstyled d-flex justify-content-start">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-12 col-md-6 d-flex justify-content-end cr-l-column"> <!-- cr = copyright, l = language -->
+            <div class="languages">
+              <select>
+                <option value="language">Langauge</option>
+                <option value="language">Arabic</option>
+                <option value="language">English</option>
+                <option value="language">France</option>
+                <option value="language">Italiano</option>
+                <option value="language">Español</option>
+                <option value="language">Türkçe</option>
+              </select>
+            </div>
+            
+            <div class="copy-right border-left d-flex align-items-center">
+              POOSTEL INC. 2018 &copy;
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+    <!-- All javascripts files -->
+
+    <!-- jQuery library file (Root) -->
+    <script src="js/root/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap framework javascript file (Important for bootstrap framework) -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- Get on with bootstrap framework because this is file is trigger the menu of the bootstrap framework -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Nice Scroll Plugin To Add Smoothy Where Scrolling -->
+    <script src="js/nice-scroll/jquery.nicescroll.min.js"></script>
+    <!-- Typed.js To Add Typing Machine In Text -->
+    <script src="js/typed-js/typed.min.js"></script>
+    <!-- Custom file for the front end developer to type her codes -->
+    <script src="js/custom-login/custom-login.js"></script>
+  </body>
+</html>

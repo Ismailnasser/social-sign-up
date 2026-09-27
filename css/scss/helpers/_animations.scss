@@ -1,0 +1,42 @@
+@keyframes loading {
+  0% {
+    background-color: #4390ed;
+  }
+  50% {
+    background-color: #ff473e;
+  }
+  100% {
+    background-color: #ffc931
+  }
+}
+
+@keyframes fadeToggle {
+  from {
+    opacity: .5
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes topFadeIn {
+  0% {
+    transform: translateY(0);
+    opacity: 0
+  }
+  100% {
+    transform: translateY(-50px);
+    opacity: 1
+  }
+}
+
+@keyframes bottomFadeOut {
+  0% {
+    transform: translateY(0);
+    opacity: 1
+  }
+  100% {
+    transform: translateY(-50px);
+    opacity: 0
+  }
+}

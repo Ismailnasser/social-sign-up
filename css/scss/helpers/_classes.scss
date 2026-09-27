@@ -1,0 +1,20 @@
+.height {
+  height: 200px !important;
+  overflow: auto !important
+}
+
+.custom-flex {
+  display: flex !important;
+}
+
+.top-fade-in {
+  animation: topFadeIn .5s ease-in-out 1 alternate
+}
+.bottom-fade-out {
+  animation: bottomFadeOut .5s ease-in-out 1 alternate
+}
+
+.scale-one {
+  transform: scale(1) !important;
+  transition: all .3s ease-in-out !important
+}
